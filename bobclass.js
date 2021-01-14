@@ -1,20 +1,21 @@
 class BobClass{
-    constructor(x,y,width,height){
+    constructor(x,y,radius){
      var options={
-        isStatic:false,
+        isStatic:true,
         restitution:0.3,
         friction:0.5,
         density:1.2
      }
-     this.body=Bodies.circle(200,390,options);
+     this.body=Bodies.circle(x,y,radius,options);
+     this.radius=radius;
      World.add(world, this.body);
+   }
 
-
-    display();
+    display(){
         var pos =this.body.position;
-        rectMode(CENTER);
+        ellipseMode(RADIUS);
         fill(255);
-        rect(pos.x,pos.y,this.width, this.height);
+        ellipse(pos.x,pos.y,this.radius);
        }
 
     }
