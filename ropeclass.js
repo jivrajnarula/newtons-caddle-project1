@@ -13,13 +13,10 @@ constructor(body1,body2, offsetX, offsetY)
    World.add(world,this.rope)
 }
 
-rope1=new this.rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-rope2=new this.rope(bobObject2.body,roofObject.body,-bobDiameter*2,0)
-rope3=new this.rope(bobObject3.body,roofObject.body,-bobDiameter*2,0)
-rope4=new this.rope(bobObject4.body,roofObject.body,-bobDiameter*2,0)
-rope5=new this.rope(bobObject5.body,roofObject.body,-bobDiameter*2,0)
 
 display(){
+
+
 var pointA=this.rope.bodyA.position;
 
 strokeWeight(2);
