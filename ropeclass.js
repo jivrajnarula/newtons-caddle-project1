@@ -15,8 +15,7 @@ constructor(body1,body2, offsetX, offsetY)
 
 
 display(){
-
-
+  
 var pointA=this.rope.bodyA.position;
 
 strokeWeight(2);
